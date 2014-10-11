@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+main () {
+    int area, lado;
+
+    printf("Informe o comprimento do lado do quadrado: ");
+    scanf("%d", &lado);
+
+    area = lado*lado;
+
+    printf("\nA area do quadrado e de %.1d\n", area);
+
+}
