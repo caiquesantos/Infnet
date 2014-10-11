@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+main () {
+    const float PI = 3.14;
+    float raio, area;
+
+    printf("Informe o comprimento do raio: ");
+    scanf("%f", &raio);
+
+    area = PI * (raio*raio);
+
+    printf("\nA area do circulo e de %.2f\n", area);
+}
