@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+main () {
+    float conta, gorjeta;
+
+    printf ("Entre com o valor da conta:");
+    scanf("%f", &conta);
+
+    gorjeta = conta * 0.1;
+
+    printf ("O valor da gorjeta sera de %.2f reais.\n", gorjeta);
+    conta = conta + gorjeta;
+    printf ("O valor da total da conta sera de %.2f reais.\n", conta);
+
+}
