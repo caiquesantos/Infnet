@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+main () {
+    float area, comprimento, largura;
+
+    printf ("Informe o comprimento do retangulo: ");
+    scanf ("%f", &comprimento);
+    printf ("Informe a largura do retangulo: ");
+    scanf ("%f", &largura);
+
+    area = (comprimento*2) + (largura*2);
+
+    printf("A area do retangulo e de %.2f", area);
+}
