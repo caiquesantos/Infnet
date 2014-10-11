@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+main () {
+    const float PI = 3.14;
+    float volume, raio, altura;
+
+    printf ("Informe o comprimento do raio da caixa cilindrica: ");
+    scanf("%f", &raio);
+    printf("Informe a altura da caixa: ");
+    scanf("%f", &altura);
+
+    volume = PI * ((raio*raio)*altura);
+
+    printf("O volume da caixa e de %.2f", volume);
+}
