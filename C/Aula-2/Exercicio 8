@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+main ()
+{
+    int octeto;
+
+    printf("Entre com o primeiro octeto do IP: ");
+    scanf("%d", &octeto);
+
+    if ((octeto >= 0) && (octeto <= 127))
+        printf("\nO endreco IP eh da classe A\n");
+
+    else if ((octeto >= 128) && (octeto <= 191))
+        printf("\nO endreco IP eh da classe B\n");
+
+    else if ((octeto >= 192) && (octeto <= 223))
+        printf("\nO endreco IP eh da classe C\n");
+
+    else if ((octeto >= 224) && (octeto <= 239))
+        printf("\nO endreco IP eh da classe D\n");
+
+    else
+        printf("\nO endereco IP eh da classe E\n");
+
+    return 0;
+}
