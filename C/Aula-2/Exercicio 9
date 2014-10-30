@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+main ()
+{
+    int mes;
+
+    printf("Informe um numero do mes: ");
+    scanf("%d", &mes);
+
+    switch (mes)
+
+    {
+    case 1:
+        printf("\nO mes eh Janeiro\n");
+        break;
+    case 2:
+        printf("\nO mes eh Fevereiro\n");
+        break;
+    case 3:
+        printf("\nO mes eh Marco\n");
+        break;
+    case 4:
+        printf("\nO mes eh Abril\n");
+        break;
+    case 5:
+        printf("\nO mes eh Maio\n");
+        break;
+    case 6:
+        printf("\nO mes eh Junho\n");
+        break;
+    case 7:
+        printf("\nO mes eh Julho\n");
+        break;
+    case 8:
+        printf("\nO mes eh Agosto\n");
+        break;
+    case 9:
+        printf("\nO mes eh Setembro\n");
+        break;
+    case 10:
+        printf("\nO mes eh Outubro\n");
+        break;
+    case 11:
+        printf("\nO mes eh Novembro\n");
+        break;
+    case 12:
+        printf("\nO mes eh Dezembro\n");
+        break;
+    default:
+        printf("\nOpcao Invalida!\n");
+        main ();
+    }
+}
