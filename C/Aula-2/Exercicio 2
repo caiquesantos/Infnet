@@ -1,15 +1,13 @@
 #include <stdio.h>
 
-main () {
-    int n1, n2;
-    float media;
+main()
+{
+    int num;
 
-    printf("Entre com o valor de n1:");
-    scanf("%d", &n1);
-    printf("Entre com o valor de n2:");
-    scanf("%d", &n2);
-
-    media = (float)(n1 + n2) /2;
-    printf("\nmedia = %.1f\n", media);
-
+    printf("Entre com um numero: ");
+    scanf("%d", &num);
+	if (num % 2 == 0)
+		printf("\nO numero eh par\n");
+	else
+        printf("\nO numero eh impar\n");
 }
