@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-main () {
+main()
+{
     int n1, n2;
-    float media;
 
-    printf("Entre com o valor de n1:");
+    printf("Entre com o primeiro numero: ");
     scanf("%d", &n1);
-    printf("Entre com o valor de n2:");
+    printf("Entre com o segundo numero: ");
     scanf("%d", &n2);
 
-    media = (float)(n1 + (n2 * 2)) /3;
-    printf("\nmedia = %.1f\n", media);
-
+    if (n1 > n2)
+        printf("\nO primeiro numero eh maior que o segundo\n");
+    else
+        printf("\nO segundo numero eh maior que o primeiro\n");
 }
-
