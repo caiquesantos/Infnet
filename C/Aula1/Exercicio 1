@@ -13,3 +13,4 @@ main () {
     n2 = aux;
 
     printf("\nO valor de n1 e %d e o valor de n2 e %d\n", n1, n2);
+    }
