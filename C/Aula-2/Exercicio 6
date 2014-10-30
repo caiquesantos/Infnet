@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+main ()
+{
+    char car;
+
+    printf("Escreva uma letra: ");
+    scanf("%c", &car);
+
+    switch (car)
+    {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+        printf("\nE uma vogal\n");
+        break;
+    default:
+        printf("\nE uma consoante\n");
+        break;
+    }
+}
