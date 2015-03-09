@@ -1,0 +1,17 @@
+        public static void main(String[] args)
+        {              
+        ArrayList<Float> ListFloat = new ArrayList<Float>();
+        Scanner leitor = new Scanner(System.in);       
+        while(ListFloat.size() < 10)
+                ListFloat.add(leitor.nextFloat());// populo a lista(sem tratamento de excecao)
+       
+        ListFloat.sort(null); //ordeno a lista
+       
+        System.out.println("asc:");
+        for(float f: ListFloat)
+                System.out.println(f); //exibição A-z
+       
+        System.out.println("desc:");
+        for(int i = (ListFloat.size()-1);i>=0;i--)
+                System.out.println(ListFloat.get(i)); //exibicao Z-a
+        }
