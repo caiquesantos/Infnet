@@ -1,0 +1,87 @@
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Milhar 
+{
+	public ArrayList <Integer> mil = new ArrayList <Integer>();
+	Random random = new Random();
+	
+	public Milhar () 
+	{ // MÈtodo Default Random.
+		int i;
+		for (i = 0; i <1000; i++) 
+		{
+			mil.add(i ,random.nextInt(10)); 
+			//Randomiza n˙meros inteiros de 0 a 9 para ocorrer mais n˙meros iguais do que de 0 a 99.
+		}
+	}
+	
+	public Milhar (ArrayList <Integer> _vetor) 
+	{ //MÈtodo construtor recebendo ArrayList.
+		for (Integer a:_vetor) 
+		{
+			mil.add(_vetor.get(a));
+		}
+	}
+	
+	public void PrintarMilhar () 
+	{
+		System.out.println(mil);
+	}
+	
+	public void Trios() 
+	{
+		int i = 0;
+		int f = 1;
+		int cont = 0;
+		
+		while (f < 1000) 
+		{
+			if ((mil.get(i) == mil.get(f)) && (mil.get(i) == mil.get(f+1))) 
+			{
+				cont++;
+				i = f + 2;
+				f = f + 3;
+			}
+			else 
+			{
+				i = f + 2;
+				f = f + 3;
+			}
+		}
+		
+		System.out.println("O N˙mero de trios de n˙meros iguais do vetor È de: "+cont);
+	}
+	
+	public void Grupos() 
+	{
+		int i = 0;
+		int f = 1;
+		int cont = 0;
+		
+		while (f < 1000) 
+		{
+			if (mil.get(i) == mil.get(f)) 
+			{
+				f++;
+				if (f == 1000) 
+				{// Trata da excess„o rangeCheck do ArrayList.
+					cont++;
+				}
+				else if (mil.get(i) != mil.get(f)) 
+				{
+					cont++;
+					i = f;
+					f = f + 1;
+				}
+			}
+			else 
+			{
+				i++;
+				f++;
+			}	
+		}	
+		
+		System.out.println("O N˙mero de grupos de n˙meros iguais do vetor È de: "+cont);
+	}
+}
