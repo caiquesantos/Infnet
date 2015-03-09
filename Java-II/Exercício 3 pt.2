@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) 
+	{
+		ArrayList <Integer> vet = new ArrayList <Integer>();
+		Random random = new Random();
+		int i;
+		
+		for (i = 0; i <1000; i++) 
+		{
+			vet.add(i ,random.nextInt(10));
+		}
+		
+		Milhar m = new Milhar();//Objeto Criado com Default.
+		Milhar m2 = new Milhar(vet);//Obejeto criado com passagem de ArrayList por par‚metro.
+		
+		m.PrintarMilhar();
+		m2.PrintarMilhar();
+		
+		m.Trios();
+		m2.Trios();
+		
+		m.Grupos();
+		m2.Grupos();
+	}
+}
