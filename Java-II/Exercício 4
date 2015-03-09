@@ -1,0 +1,84 @@
+package Exe1;
+
+import java.util.ArrayList;
+
+public class Main 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList<String> nomes = new ArrayList<String>(10);
+		
+		nomes.add("Caique Bernardo");
+		nomes.add("Kyungsoo Do");
+
+		for (String nome : nomes)
+		{
+			System.out.println(nome);
+		}
+		
+		//to upperCase
+		for (String nome: nomes)
+		{
+			System.out.println(nome.toUpperCase() );
+		}
+		
+		//to lowerCase
+		for (String nome: nomes)
+		{
+			System.out.println(nome.toLowerCase());
+		}
+		
+		//to length
+		for (String nome: nomes)
+		{
+			System.out.println(nome.length());
+		}
+		
+		//concat
+		for (String nome: nomes)
+		{
+			System.out.println(nome.concat("-kun"));
+		}
+		
+		//replace "a" por 4
+    for(String nome: nomes)
+    {
+      System.out.println(nome.replace('a', '4'));
+    }
+    
+    //replace "an" por JavaII
+    for(String nome: nomes)
+    {
+      System.out.println(nome.replace("an", "JAVA2"));
+    }
+   
+   //Starwith "M"
+    for(String nome: nomes)
+    {
+      if(nome.startsWith("M"))
+        System.out.println(nome);
+    }
+    
+    //Sobrenome Endswith "O"
+    for(String nome: nomes)
+    {
+      String sobrenome[] = nome.split(" ");
+ 
+      if (sobrenome[sobrenome.length -1].endsWith("o"))
+      {
+        System.out.println(sobrenome[sobrenome.length -1]);
+      }
+    }
+    
+    //Sobrenome Startswith "A"
+    for(String nome: nomes)
+    {
+      String sobrenome[] = nome.split(" ");
+      
+      if (sobrenome[sobrenome.length -1].startsWith("A"))
+      {
+        System.out.println(sobrenome[sobrenome.length -1]);
+      }
+    }
+  }
+}
